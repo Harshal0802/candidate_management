@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+
+  .list {
+    width: 600px;
+  }
+
+  .details {
+    flex: 1;
+  }
+}

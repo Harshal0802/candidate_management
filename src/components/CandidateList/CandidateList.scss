@@ -1,0 +1,16 @@
+.list-container {
+  //   border: 1px solid black;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+//   justify-content: center;
+align-items: center;
+//   align-self: center;
+  //   justify-content: center;
+
+  .list_item {
+    margin: 10px;
+    list-style-type: none;
+    // align-self: center;
+  }
+}

@@ -1,17 +1,15 @@
-import CandidateDetails from "../../components/CandidateDetails/CandidateDetails";
 import CandidateList from "../../components/CandidateList/CandidateList";
 import "./Home.scss";
-
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
-  
   return (
     <div className="container">
       <div className="list">
         <CandidateList />
       </div>
       <div className="details">
-        <CandidateDetails />
+        <Outlet />
       </div>
     </div>
   );

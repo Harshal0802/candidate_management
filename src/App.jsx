@@ -1,8 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import CandidateForm from "./components/CandidateForm/CandidateForm";
-// import Login from "./pages/Login/Login";
 import CandidateDetails from "./components/CandidateDetails/CandidateDetails";
+import NoCandidateSelect from "./components/NoCandidateSelect.jsx";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +11,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
+        element: <NoCandidateSelect />,
+      },
+      {
+        path: "/candidate/:id",
         element: <CandidateDetails />,
       },
       {
@@ -18,7 +22,7 @@ const router = createBrowserRouter([
         element: <CandidateForm />,
       },
       {
-        path: "candidate/:id",
+        path: "/candidate/new/:id",
         element: <CandidateForm />,
       },
     ],

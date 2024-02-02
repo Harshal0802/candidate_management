@@ -6,8 +6,8 @@ import CandidateProvider from "./context/CandidateProvider.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <CandidateProvider>
-      <App />
-    </CandidateProvider>
+      <CandidateProvider>
+        <App />
+      </CandidateProvider>
   </React.StrictMode>
 );
